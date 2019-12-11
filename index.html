@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>积分系统</title>
+    <meta name="keywords" content="积分系统">
+    <meta name="description" content="积分系统">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link type="text/css" rel="stylesheet" href="list-style.css">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="row wrapper border-bottom white-bg page-heading daobottom">
+        <div class="form-group">
+            <div class="daohang_nav">
+                <span class="false-reay">
+                <a href="#">
+                <img src="../img/dlibs/false.png"> 返回</a>
+                </span> → 参数管理 → 读者类型开通设置
+                <button class="shua" href="#" onClick="location.reload();"><img src="../img/dlibs/sicon.png"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="ibox-content p-xl">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div id="selectTitle" class="list-select">
+                                <h1>【开通】</h1>
+                                <h2>【关闭】</h2>
+                                <div class="list-body">
+                                    <ul class="item-box left-box">
+                                        <!-- 左边框初始化待选项 -->
+                                        <li class="item" data-id="nav1">月流通趋势</li>
+                                        <li class="item" data-id="nav2">读者总量</li>
+                                        <li class="item" data-id="nav3">借阅排行榜</li>
+                                        <li class="item" data-id="nav4">当月热门借阅关键字</li>
+                                        <li class="item" data-id="nav5">读者借阅排行榜 按性</li>
+                                        <li class="item" data-id="nav6">热门分类借阅.定时</li>
+                                        <li class="item" data-id="nav7">新闻动态列表</li>
+                                        <li class="item" data-id="nav8">年度借阅报告</li>
+                                        <li class="item" data-id="nav9">年度借阅最多册数</li>
+                                        <li class="item" data-id="nav10">主要流通点借阅活跃度</li>
+                                        <li class="item" data-id="nav11">分类借阅比率</li>
+                                        <li class="item" data-id="nav12">读者类型借阅排行榜</li>
+                                        <li class="item" data-id="nav13">月办证类型分布</li>
+                                        <li class="item" data-id="nav14">多年度办证趋势</li>
+                                        <li class="item" data-id="nav15">流通点馆藏分布</li>
+                                        <li class="item" data-id="nav16">馆藏与读者总量</li>
+                                        <li class="item" data-id="nav17">办证趋势.月平均趋势</li>
+                                        <li class="item" data-id="nav18">馆藏总量</li>
+                                        <li class="item" data-id="nav19">读者证类型分布</li>
+                                        <li class="item" data-id="nav20">读者性别分布</li>
+                                        <li class="item" data-id="nav21">读者年龄段分布</li>
+                                        <li class="item" data-id="nav22">读者学历分布</li>
+                                        <li class="item" data-id="nav23">读者分馆分布</li>
+                                        <li class="item" data-id="nav24">读者有效读者分布</li>
+                                        <li class="item" data-id="nav25">讲座培训</li>
+                                        <li class="item" data-id="nav26">专题展览</li>
+                                        <li class="item" data-id="nav27">电影播放</li>
+                                        <li class="item" data-id="nav28">活动次数</li>
+                                    </ul>
+                                    <div class="center-box">
+                                        <button class="add-one" title="添加选中项">></button>
+                                        <button class="add-all" title="添加全部">>></button>
+                                        <button class="remove-one" title="移除选中项"><</button>
+                                        <button class="remove-all" title="移除全部"><<</button>
+                                    </div>
+                                    <ul class="item-box right-box">
+
+                                        <!-- 右边框存放已选项 -->
+                                    </ul>
+                                </div>
+                                <div class="list-footer">
+                                    <button class="btn btn-w-m btn-primary" title="获取选择值，输出到控制台">保存</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script type="text/javascript" src="jquery.min.js?v=2.1.4"></script>
+    <script type="text/javascript" src="bootstrap.min.js?v=3.3.6"></script>
+    <script type="text/javascript" src="jquery-ui-1.11.0.js"></script>
+    <script type="text/javascript" src="list-script.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            // 是否开启选项可拖动，选项可双击
+            $('#selectTitle').initList({
+                openDrag: true,
+                openDblClick: true
+            });
+        });
+    </script>
+
+</body>
+
+</html>

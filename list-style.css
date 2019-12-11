@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.list-select {
+	width: 960px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin: 10px auto;
+	background: #fbfdfd;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.list-select h1{
+	text-align:center;
+	width:420px;
+	height:10px;
+	font-size:20px;
+	float:left;
+	color:#1ab394;
+}
+
+.list-select h2{
+	text-align:center;
+	width:420px;
+	height:10px;
+	font-size:20px;
+	float:right;
+	color:#ed5565;
+}
+
+
+.list-select .list-body {
+	width: 100%;
+}
+
+.list-body>* {
+	display: inline-block;
+	height: 700px;
+	overflow: auto;
+}
+
+.list-body .left-box,
+.list-body .right-box {
+	width: 420px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin: 10px 10px;
+	background: #fff;
+}
+
+.list-body .center-box {
+	width: 65px;
+	padding-top: 170px
+}
+
+.list-body .item-box-hover {
+	background: #b8ddf5;
+}
+
+.list-body .item {
+	display: block;
+	text-align: left;
+	padding-left: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.list-body .item:hover {
+	background: #f3f5f7;
+	cursor: pointer;
+}
+
+.list-body .item-placeholder {
+	background: #58b4ee;
+	border: 1px dashed #999;
+}
+
+.list-body .item-box .selected-item {
+	background: #1c84c6;
+	color: #fff;
+	border-bottom: 1px #fff dashed;
+}
+
+.list-body .center-box>button {
+	display: block;
+	color: #fff;
+	width: 50px;
+	height: 30px;
+	font-size: 18px;
+	border-radius: 2px;
+	margin: 25px auto;
+}
+
+.list-body .center-box>button:hover {
+	cursor: pointer;
+}
+
+.list-select .list-footer {
+	height: 45px;
+	line-height: 42px;
+	border-top: 1px solid #ddd;
+	text-align: center;
+	background: #f3f5f7;
+}
+
+.add-one {
+	background: #1ab394;
+	border: 1px solid #1ab394;
+}
+
+.add-one:hover {
+	background: #18a689;
+	border-color: #18a689;
+}
+
+.add-all {
+	background: #1ab394;
+	border: 1px solid #1ab394;
+}
+
+.add-all:hover {
+	background: #18a689;
+	border-color: #18a689;
+}
+
+.remove-one {
+	background: #ed5565;
+	border: 1px solid #ed5565;
+}
+
+.remove-one:hover {
+	background: #ec4758;
+	border-color: #ec4758;
+}
+
+.remove-all {
+	background: #ed5565;
+	border: 1px solid #ed5565;
+}
+
+.remove-all:hover {
+	background: #ec4758;
+	border-color: #ec4758;
+}
